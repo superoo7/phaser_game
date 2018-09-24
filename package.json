@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "phaser": "^3.13.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7",
+    "surge": "^0.20.1",
+    "typescript": "^3.0.3"
+  },
+  "scripts": {
+    "dev": "parcel serve src/index.html",
+    "build": "parcel build src/index.html",
+    "deploy": "rm -rf dist && yarn build && (echo \"https://han_game.surge.sh\" > dist/CNAME) && surge dist/"
+  },
+  "name": "mario-style",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superoo7/phaser_game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superoo7/phaser_game/issues"
+  },
+  "homepage": "https://github.com/superoo7/phaser_game#readme",
+  "description": ""
+}
